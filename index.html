@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url(cha12.jpg);
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 5.30am to 1pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">BANCHACHIKAO</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE BANCHACHIKAO</span></h5>
+    <p>ร้านอาหารบรรยากาศสุดชิว ริมถนนชายเขา อำเภอเมือง จังหวัดสงขลา ร้านอาหารเช้าแบบง่าย ๆ แต่รสชาติอร่อยและราคาไม่แพง เจ้าของร้านคือ คุณกันตยา ศรีสุวรรณ หรือคุณปุ๊ซึ่งได้ใช้บ้านของตัวเองเปิดเป็นร้านอาหารขึ้น บ้านชาชายเขา จำหน่ายอาหารเช้าหลากหลาย เช่น โจ๊ก น้ำชา กาแฟ อาหารเช้า สลัด ก๋วยเตี๋ยวหมูกระดูกอ่อน ข้าวเหนียวหมู ข้าวเหนียวไก่ ติ่มซำ และอื่นๆอีกหลายเมนูที่ให้คุณอิ่มท้องไปกับอาหารมื้อเช้าที่แสนอร่อย พร้อมราคาที่เป็นกันเอง ร้านเปิดเฉพาะช่วงเช้าเท่านั้น กินเสร็จแล้วสามารถเดินย่อยอาหารขึ้นไปชมวิวและนมัสการพระธาตุเจดีย์หลวงบนเขาตังกวนได้อีกด้วย
+</p>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+      <p><i>ร้านบ้านเปิดตั้งแต่ 05.30น.- 13.30น. ทุกวันไม่เว้นวันหยุด ตั้งอยู่ที่แถวชายเขา อยู่ติดกับสภากาชาด จังหวัดสงขลา ติดต่อ คุณปุ๊ 080-3651781,089-4660948 </i></p>
+    </div>
+    <img src="cha.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <img src="cha7.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>เปิดบริการ:</strong> ทุกวัน ตั้งแต่เวลา 5.30-13.00 น.</p>
+    <p><strong>ที่ตั้ง:</strong> 21 ถ.ชายเขา ต.บ่อยาง อ.เมือง เทศบาลนครสงขลา </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>อาหารจานเดียว</h5>
+      <p class="w3-text-grey">ข้าวปลากะพงทอด 80</p>
+      <p class="w3-text-grey">ข้าวหมูทอด 50</p>
+      <p class="w3-text-grey">ข้าวหมูทอดกระเทียม 50</p>
+      <p class="w3-text-grey">ข้าวผัดหมู 50</p>
+      <p class="w3-text-grey">ข้าวผัดกุ้ง/ปลากะพง 60</p>
+      <p class="w3-text-grey">ข้าวผัดรวม 70</p>
+      <p class="w3-text-grey">ข้าวไข่เจียว,กุ้งสับ,หมูสับ 30/40/50</p>
+      <p class="w3-text-grey">ข้าวเหนียวหมู,ไก่ 60</p>
+    
+      <h5>ก๋วยเตี๋ยว</h5>
+      <p class="w3-text-grey">ก๋วยเตี๋ยวซี่โครง(น้ำใส/ต้มยำ) 50/60</p>
+      <p class="w3-text-grey">ก๋วยเตี๋ยวหมูสับ(น้ำใส/ต้มยำ) 50/60</p>
+      <p class="w3-text-grey">ก๋วยเตี๋ยวปลากะพง(น้ำใส/ต้มยำ) 60</p>
+      <p class="w3-text-grey">ก๋วยเตี๋ยวปลากะพงทอด(แห้ง/ต้มยำ) 70</p>
+      <p class="w3-text-grey">เกาหลาซี่โครง/ปลากะพง(น้ำใส/ต้มยำ) 50/60</p>
+  
+      <h5>เมนูอาหารเช้า</h5>
+      <p class="w3-text-grey">สลัดปลากะพง 80</p>
+      <p class="w3-text-grey">สลัดทูน่า,หมูทอด 65</p>
+      <p class="w3-text-grey">สลัดไข่,ไส้กรอก 45</p>
+      <p class="w3-text-grey">สลัดไข่,แฮม 45</p>
+      <p class="w3-text-grey">สลัดผัก,ไข่ดาว 35</p>
+      <p class="w3-text-grey">โจ๊กปลากะพง 40/45</p>
+      <p class="w3-text-grey">โจ๊กหมู 20/25</p>
+      <p class="w3-text-grey">ไส้กรอกทอด 35</p>
+      <p class="w3-text-grey">ขนมปังหน้าหมู 25</p>
+      <p class="w3-text-grey">ขนมปังชุบไข่ 25</p>
+      <p class="w3-text-grey">เต้าหู้ปลาทอด/นึ่ง 45</p>
+      <p class="w3-text-grey">ซาลาเปาเต้าหู้ปลาทอด 45</p>
+      <p class="w3-text-grey">ขนมจีบ(ชุดละ) 20/30</p>
+      <p class="w3-text-grey">ซาลาเปา(ลูกละ) 6</p>
+      <p class="w3-text-grey">ขนมปังปิ้ง 15</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>เครื่องดื่มร้อน</h5>
+      <p class="w3-text-grey">ชาร้อน  12 </p>
+      <p class="w3-text-grey">กาแฟโบราณร้อน 12 </p>
+      <p class="w3-text-grey">ชาเขียวร้อน 12 </p>
+      <p class="w3-text-grey">เนสกาแฟร้อน 15 </p>
+      <p class="w3-text-grey">โอวัลตินร้อน 15 </p>
+      <p class="w3-text-grey">โกโก้ร้อน 15 </p>
+      <p class="w3-text-grey">นมสดร้อน 20 </p>
+      <p class="w3-text-grey">ไข่ลวก 20 </p>
+    
+      <h5>เครื่องดื่มเย็น</h5>
+      <p class="w3-text-grey">ชาเย็น แบบแก้ว 15 แบบถุง 17</p>
+      <p class="w3-text-grey">โอวัลตินเย็น แบบแก้ว 15 แบบถุง 20</p>
+      <p class="w3-text-grey">กาแฟเย็น แบบแก้ว 15 แบบถุง 17</p>
+      <p class="w3-text-grey">เนสกาแฟเย็น แบบแก้ว 20 แบบถุง 20</p>
+      <p class="w3-text-grey">โกโก้ แบบแก้ว 20 แบบถุง 20</p>
+      <p class="w3-text-grey">ชาดำเย็น แบบแก้ว 12 แบบถุง 15</p>
+      <p class="w3-text-grey">โอเลี้ยง แบบแก้ว 12 แบบถุง 15</p>
+      <p class="w3-text-grey">น้ำหวานแดง,เขียว แบบแก้ว 12 แบบถุง 15</p>
+      <p class="w3-text-grey">ชาเขียวเย็น แบบแก้ว 15 แบบถุง 17</p>
+      <p class="w3-text-grey">ชาเขียวมะนาว แบบแก้ว 15 แบบถุง 17</p>
+      <p class="w3-text-grey">ชามะนาว แบบแก้ว 15 แบบถุง 17</p>
+      <p class="w3-text-grey">น้ำแดง,เขียว,มะนาว แบบแก้ว 15 แบบถุง 17</p>
+      <p class="w3-text-grey">นมสดเย็น แบบแก้ว 20 แบบถุง 20</p>
+      <p class="w3-text-grey">นมเย็นแดง,เขียว แบบแก้ว 20 แบบถุง 20</p>
+    </div>  
+      
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="cha8.jpg" style="width:100%">
+      <img src="cha00.jpg" style="width:100%">
+      <img src="cha11.jpg" style="width:100%">
+      <img src="cha10.jpg" style="width:100%">
+      <img src="cha20.jpg" style="width:100%">
+      <img src="cha24.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="cha13.jpg" style="width:100%">
+      <img src="cha15.jpg" style="width:100%">
+      <img src="cha18.jpg" style="width:100%">
+      <img src="cha22.jpg" style="width:100%">
+      <img src="cha12.jpg" style="width:100%">
+      <img src="cha0.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(7.1565312018182, 100.60261992727);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiueseEH5yvg5SRpmgeeInem9sS4KU3zI"></script>
+<!--To use this code on your website, get a free API key from Google.Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp-->
+</body>
+</html>
